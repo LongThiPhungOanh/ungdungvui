@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>Do you love me</h4>
+<div id="displayer"></div>
+<button onclick="clickme()">Yes</button>
+<div id="no"><button onmouseover="run()">No</button></div>
+</body>
+<script>
+
+  function clickme(){
+      document.getElementById("displayer").innerHTML = "<3"
+  }
+
+  function run(){
+      var x = Math.random() * (300 - 1) + 1;
+      var y = Math.random() * (900 - 1) + 1;
+      document.getElementById("no").style.marginTop = x+"px";
+      document.getElementById("no").style.marginLeft = y+"px";
+  }
+</script>
+</html>
